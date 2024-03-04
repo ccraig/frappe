@@ -231,7 +231,7 @@ def get_context(context):
 			dict_with_keys(context, ["is_list", "is_new", "in_edit_mode", "in_view_mode"])
 		)
 
-		if self.show_sidebar and self.website_sidebar:
+		if self.show_sidebar:
 			context.sidebar_items = get_sidebar_items(self.website_sidebar)
 
 		if frappe.form_dict.is_list:
